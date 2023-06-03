@@ -8,7 +8,7 @@ API designed to simplify the management of daily tasks, empowering users to stay
 | /api/v1/task/{id}      | GET    | Retrieve a specific task        |
 | /api/v1/task           | POST   | Create a new task               |
 | /api/v1/task/{id}      | PATCH    | Update a specific task          |
-| /api/v1/users/{id}      | DELETE | Delete a specific task          |
+| /api/v1/task/{id}      | DELETE | Delete a specific task          |
 
 
 ## Demo
