@@ -49,6 +49,7 @@ const createTask = async (req, res) => {
       return res.status(404).json({ message: "feild must be provided" });
     const task = await new taskSachema({ name, completed }).save();
     return res.status(200).json({
+      id: task._id,
       name: task.name,
       completed: task.completed,
       createdAt: formatTime(task.createdAt),
