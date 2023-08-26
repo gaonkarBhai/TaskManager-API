@@ -26,7 +26,7 @@ const getAllTask = async (req, res) => {
 
     const formattedData = data.map((item) => {
       return {
-        id:item._id
+        id:item._id,
         name: item.name,
         completed: item.completed,
         createdAt: formatTime(item.createdAt),
